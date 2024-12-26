@@ -1,0 +1,463 @@
+* {
+    font-family: monospace;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 19px;
+}
+
+
+p {
+    font-size: 19px;
+}
+
+@media (width: 820px) {
+    * {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:768px) {
+    * {
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+
+/*navbar*/
+.line {
+    display: none;
+    color: white;
+}
+.nav-link {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    color: white;
+    margin: 0;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    display: grid;
+
+}
+
+.menu {
+    display: none;
+}
+
+.dropbtn {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .main {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar nav a {
+        margin: 0 8px;
+    }
+
+    .dropdown-content {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navbar {
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    .navbar h1 {
+        margin-bottom: 10px;
+    }
+
+    .navbar nav a {
+        display: none;
+        margin: 5px 0;
+    }
+
+    .menu {
+        display: inline-block;
+        position: relative;
+    }
+
+    .dropbtn {
+        background-color: rgb(70, 68, 68);
+        ;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        display: block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        left: -185%;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: rgb(70, 68, 68);
+    }
+    .line hr{
+        display: block;
+    }
+}
+
+/*main*/
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+}
+
+.subfrist {
+    flex: 1;
+    text-align: left;
+}
+
+.subfrist p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: white;
+}
+
+
+.subsecond {
+    flex: 1;
+    text-align: center;
+}
+
+.subsecond img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contact-btn {
+    border-radius: 5px;
+    padding: 15px;
+    width: 55%;
+}
+
+.contact-btn:hover {
+    background-color: rgb(70, 68, 68);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-btn {
+        width: 50%;
+    }
+
+    .subfrist,
+    .subsecond {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .subfrist {
+        margin-bottom: 20px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subfrist,
+    .subsecond {
+        flex: unset;
+        width: 100%;
+        text-align: center;
+    }
+
+    .subfrist {
+        margin-bottom: 20px;
+    }
+
+}
+
+/* links */
+a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: inherit;
+}
+
+a:hover {
+    color: #0077b5;
+}
+
+i {
+    font-size: 24px;
+
+}
+
+/* form */
+.input {
+    width: 500px;
+    padding: 15px;
+}
+
+.input1 {
+    width: 97%;
+    height: 150px;
+}
+
+.forms {
+    display: flex;
+    column-gap: 7%;
+}
+
+@media(max-width:1350px) {
+    .forms {
+        flex-direction: column;
+
+    }
+
+    .input {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .form {
+        margin: 21px;
+    }
+
+    .input1 {
+        width: 98%;
+    }
+
+}
+
+@media(max-width:768px) {
+    .input {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .forms {
+        flex-direction: column;
+    }
+
+    .form {
+        margin: 21px;
+    }
+
+}
+
+@media(max-width:560px) {
+    .input {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .forms {
+        flex-direction: column;
+    }
+
+    .form {
+        margin: 21px;
+    }
+
+}
+
+/* Education */
+.degree {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.degree1 {
+    border: 1px solid;
+    height: 90%;
+}
+
+.degree2 {
+    height: 200px;
+    border-radius: 10%;
+    width: auto;
+    margin-left: 30%;
+}
+
+@media (max-width: 768px) {
+    .cap {
+        width: 100%;
+    }
+
+    .degree {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .degree1 {
+        height: 100%;
+    }
+
+    .degree2 {
+        margin-left: 30%;
+        margin-top: 8%;
+    }
+}
+
+/* certificate */
+.certificates {
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+}
+
+.cert:hover {
+    cursor: pointer;
+    box-shadow: white;
+
+}
+
+.cert1 {
+    width: 100%;
+}
+
+.cert2 {
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 10px;
+    background-color: black;
+    padding-bottom: 10px;
+}
+
+.cert2 h2 {
+    margin-top: 0px;
+}
+@media (max-width: 1024px) {
+    .certificates {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cert1 {
+        width: 100%;
+    }
+
+    .cert2 {
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 10px;
+        background-color: black;
+        padding-bottom: 10px;
+    }
+
+    .cert2 h2 {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .certificates {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .cert1 {
+        width: 100%;
+    }
+
+    .cert2 {
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 10px;
+        background-color: black;
+        padding-bottom: 10px;
+    }
+
+    .cert2 h2 {
+        margin-top: 0px;
+    }
+    
+}
